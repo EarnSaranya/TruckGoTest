@@ -62,6 +62,19 @@
 	  <None Remove="Resources\Fonts\SukhumvitSet-Bold.ttf" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="views\" />
+	  <Compile Update="views\DestinationPage.xaml.cs">
+	    <DependentUpon>DestinationPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="views\OriginPage.xaml.cs">
+	    <DependentUpon>OriginPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="views\DestinationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\OriginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 </Project>

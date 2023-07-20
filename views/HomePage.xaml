@@ -68,6 +68,23 @@
                     </Frame.GestureRecognizers>
                 </Frame>
             </Grid>
+            
+            <Grid RowDefinitions="*,65" RowSpacing="15" Margin="0,25">
+                <Frame Grid.Row="1" BackgroundColor="{StaticResource PinkBtn}" BorderColor="Transparent" CornerRadius="25" HeightRequest="50" Padding="0">
+                    <Label Text="ต้นทางมหัศจรรย์" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="20" FontAttributes="Bold" FontFamily="SukhumvitBold"/>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="frameOriginPage" Tapped="frameOriginPage_Tapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
+            <Grid RowDefinitions="*,65" RowSpacing="15" Margin="0,25">
+                <Frame Grid.Row="1" BackgroundColor="{StaticResource PinkBtn}" BorderColor="Transparent" CornerRadius="25" HeightRequest="50" Padding="0">
+                    <Label Text="ปลายทางมหัศจรรย์" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="20" FontAttributes="Bold" FontFamily="SukhumvitBold"/>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="frameDestinationPage" Tapped="frameDestinationPage_Tapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
         </StackLayout>
     </ScrollView>
 </ContentPage>

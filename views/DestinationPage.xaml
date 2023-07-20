@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TruckGoTest.views.OriginPage"
-             Title="OriginPage" Shell.NavBarIsVisible="False"
+             x:Class="TruckGoTest.views.DestinationPage"
+             Title="DestinationPage" Shell.NavBarIsVisible="False"
              Shell.TabBarIsVisible="False" BackgroundColor="#F4F4F4"
               x:Name="RootContent">
 
     <Grid RowDefinitions="90,*" >
         <Grid Grid.Row="0"  ColumnDefinitions="80,*,80" Margin="0,15,0,0">
-            <Label Text="เลือกต้นทาง" Grid.Column="1" FontFamily="SukhumvitBold" FontAttributes="Bold" FontSize="20" TextColor="{StaticResource BlueTopiclbl}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label Text="เลือกปลายทาง" Grid.Column="1" FontFamily="SukhumvitBold" FontAttributes="Bold" FontSize="20" TextColor="{StaticResource BlueTopiclbl}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             <!--<VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" >
                 <Frame WidthRequest="30" HeightRequest="30" CornerRadius="15" BackgroundColor="{StaticResource OrangeBtn}" BorderColor="Transparent"/>
                 <Label Text="เลือกทั้งหมด" TextColor="Black" FontSize="10" Margin="0,5"/>
@@ -19,7 +19,7 @@
         <StackLayout Grid.Row="1" >
             <ScrollView VerticalScrollBarVisibility="Always" VerticalOptions="FillAndExpand">
                 <StackLayout Margin="10,0,10,10" HeightRequest="19999">
-                    <Label Text="เลือกต้นทาง" FontFamily="SukhumvitBold" FontAttributes="Bold" TextColor="#0C97FA" FontSize="25" HorizontalTextAlignment="Center"/>
+                    <Label Text="เลือกปลายทาง" FontFamily="SukhumvitBold" FontAttributes="Bold" TextColor="#0C97FA" FontSize="25" HorizontalTextAlignment="Center"/>
                     <ScrollView>                    
                         <StackLayout Margin="0,10,0,0">
 
@@ -27,12 +27,12 @@
                             <StackLayout>
                                 <Grid ColumnDefinitions="30,*" RowDefinitions="*,*">
                                     <Image Source="locationdrive" Grid.Column="0" WidthRequest="25" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,2"/>
-                                    <Label Text="ต้นทางอะไรดีน้า1" Grid.Column="1" Grid.Row="0" FontSize="16" FontFamily="SCGBold" FontAttributes="Bold" VerticalTextAlignment="Center" TextColor="#0C67D1"/>
+                                        <Label Text="ปลายทางอะไรดีน้า1" Grid.Column="1" Grid.Row="0" FontSize="16" FontFamily="SCGBold" FontAttributes="Bold" VerticalTextAlignment="Center" TextColor="#0C67D1"/>
                                     <Label Text="อยูู่ที่ไหนดีน้า1" Grid.Column="1" Grid.Row="1" Opacity=".8" VerticalTextAlignment="Start" TextColor="#0C67D1"/>
                                 </Grid>
                                 <StackLayout VerticalOptions="End">
-                                    <Button  Text="เลือกต้นทาง" TextColor="White" BackgroundColor="#0C97FA" CornerRadius="10" Margin="0,5,0,0" FontSize="17" Clicked="Button_Clicked" CommandParameter="ShippingCode_No"/>
-                                    <Button  Text="สลับต้นทาง" TextColor="White" BackgroundColor="#0C97FA" CornerRadius="10" Margin="0,5,0,0" FontSize="17" IsVisible="False"/>
+                                        <Button  Text="เลือกปลายทาง" TextColor="White" BackgroundColor="#0C97FA" CornerRadius="10" Margin="0,5,0,0" FontSize="17" Clicked="Button_Clicked" CommandParameter="ShippingCode_No"/>
+                                        <Button  Text="สลับปลายทาง" TextColor="White" BackgroundColor="#0C97FA" CornerRadius="10" Margin="0,5,0,0" FontSize="17" IsVisible="False"/>
                                 </StackLayout>
 
                             </StackLayout>
@@ -42,12 +42,12 @@
                             <StackLayout>
                                 <Grid ColumnDefinitions="30,*" RowDefinitions="*,*">
                                     <Image Source="locationdrive" Grid.Column="0" WidthRequest="25" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,2"/>
-                                    <Label Text="ต้นทางอะไรดีน้า2" Grid.Column="1" Grid.Row="0" FontSize="16" FontFamily="SCGBold" FontAttributes="Bold" VerticalTextAlignment="Center" TextColor="#0C67D1"/>
+                                        <Label Text="ปลายทางอะไรดีน้า2" Grid.Column="1" Grid.Row="0" FontSize="16" FontFamily="SCGBold" FontAttributes="Bold" VerticalTextAlignment="Center" TextColor="#0C67D1"/>
                                     <Label Text="อยูู่ที่ไหนดีน้า2" Grid.Column="1" Grid.Row="1" Opacity=".8" VerticalTextAlignment="Start" TextColor="#0C67D1"/>
                                 </Grid>
                                 <StackLayout VerticalOptions="End">
-                                    <Button  Text="เลือกต้นทาง" TextColor="White" BackgroundColor="#0C97FA" CornerRadius="10" Margin="0,5,0,0" FontSize="17" Clicked="Button_Clicked" CommandParameter="ShippingCode_No"/>
-                                    <Button  Text="สลับต้นทาง" TextColor="White" BackgroundColor="#0C97FA" CornerRadius="10" Margin="0,5,0,0" FontSize="17" IsVisible="False"/>
+                                        <Button  Text="เลือกปลายทาง" TextColor="White" BackgroundColor="#0C97FA" CornerRadius="10" Margin="0,5,0,0" FontSize="17" Clicked="Button_Clicked" CommandParameter="ShippingCode_No"/>
+                                        <Button  Text="สลับปลายทาง" TextColor="White" BackgroundColor="#0C97FA" CornerRadius="10" Margin="0,5,0,0" FontSize="17" IsVisible="False"/>
                                 </StackLayout>
 
                             </StackLayout>

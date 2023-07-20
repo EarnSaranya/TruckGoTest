@@ -19,6 +19,7 @@
     <Color x:Key="Gray950">#141414</Color>
     <Color x:Key="BlueMainColor">#0054FF</Color>
     <Color x:Key="OrangeBtn">#FF7B56</Color>
+    <Color x:Key="PinkBtn">#F699CD</Color>
     <Color x:Key="BlueTopiclbl">#1C408A</Color>
     <Color x:Key="BlueBGFrame">#D9E5FF</Color>
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>

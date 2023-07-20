@@ -11,4 +11,16 @@ public partial class HomePage : ContentPage
     {
 		await Navigation.PushAsync(new CreateShipmentPage());
     }
+
+    async void frameOriginPage_Tapped(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new OriginPage());
+
+    }
+
+    async void frameDestinationPage_Tapped(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new DestinationPage());
+
+    }
 }

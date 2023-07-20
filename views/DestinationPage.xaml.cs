@@ -1,8 +1,8 @@
 ﻿namespace TruckGoTest.views;
 
-public partial class OriginPage : ContentPage
+public partial class DestinationPage : ContentPage
 {
-	public OriginPage()
+	public DestinationPage()
 	{
 		InitializeComponent();
 	}
