@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TruckGoTest.views.ReportPage"
+             Title="ReportPage" Shell.NavBarIsVisible="False">
+
+    <StackLayout>
+        <Grid ColumnDefinitions="80,*,80" Margin="0,5">
+            <Label Text="เข้ารับสินค้า" Grid.Column="1" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="20" TextColor="{StaticResource BlueTopiclbl}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" >
+                <Frame WidthRequest="30" HeightRequest="30" CornerRadius="15" BackgroundColor="{StaticResource OrangeBtn}" BorderColor="Transparent"/>
+                <Label Text="E-Shipment" TextColor="Black" FontSize="10" Margin="0,5"/>
+            </VerticalStackLayout>
+        </Grid>
+
+        <Frame BackgroundColor="{StaticResource BlueBGFrame}" CornerRadius="10" BorderColor="Transparent" Margin="10">
+            <Grid ColumnDefinitions="*,60">
+                <Label Text="หัวหิน, ประจวบคีรีขันธ์" FontAttributes="Bold" FontFamily="SukhumvitBold" TextColor="Black" Grid.Column="0" FontSize="16" VerticalTextAlignment="Center"/>
+                <VerticalStackLayout Grid.Column="1" HorizontalOptions="End" >
+                        <Frame WidthRequest="30" HeightRequest="30" CornerRadius="15" BackgroundColor="{StaticResource OrangeBtn}" BorderColor="Transparent"/>
+                        <Label Text="สลับต้นทาง" TextColor="Black" FontSize="10" Margin="0,3,0,0"/>
+                </VerticalStackLayout>
+            </Grid>
+        </Frame>
+
+        <HorizontalStackLayout Margin="10,5">
+            <Label Text="รูปถ่าย" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="18"/>
+            <Label Text="*" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="3,0" TextColor="Red" FontSize="12"/>
+        </HorizontalStackLayout>
+
+        <Frame BackgroundColor="{StaticResource BlueBGFrame}" CornerRadius="10" BorderColor="Transparent" Margin="10" Padding="8">
+            <FlexLayout x:Name="flexTakePictureX"  Wrap="Wrap"  AlignItems="Start" HorizontalOptions="Start">
+                <Frame x:Name="frameTakePicture" HorizontalOptions="StartAndExpand" HeightRequest="125" WidthRequest="100" BorderColor="#FFC5B2" BackgroundColor="Transparent" Padding="-10" Margin="5" CornerRadius="15">
+                    <StackLayout  x:Name="stckTakePicture" Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="10">
+                         <HorizontalStackLayout HorizontalOptions="Center" Margin="0,15,0,0">
+                            <Label Text="ถ่ายรูป" x:Name="lblTakePicture" HorizontalTextAlignment="Center" TextColor="#565656"/>
+                            <Label Text="*" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="3,0" TextColor="Red" FontSize="12"/>
+                        </HorizontalStackLayout>
+                        <Image Source="addimage" x:Name="imageCameraPic" Scale=".6" Opacity=".5" Margin="0,-10" />
+                    </StackLayout>
+                </Frame>
+            </FlexLayout>
+        </Frame>
+
+        <Label Text="ลายเซ็นต์" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="18" Margin="10"/>
+        <Frame BackgroundColor="{StaticResource BlueBGFrame}" CornerRadius="10" BorderColor="Transparent" Margin="10" Padding="8">
+
+        </Frame>
+    </StackLayout>
+</ContentPage>

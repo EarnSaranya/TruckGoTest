@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TruckGoTest.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TruckGoTest.views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent Title="หน้าหลัก" Route="HomePage"
+                      ContentTemplate="{DataTemplate local:HomePage}"/>
+        <ShellContent Title="ตารางงาน" Route="CalendarPage"
+                      ContentTemplate="{DataTemplate local:CalendarPage}"/>
+        <ShellContent Title="แจ้งปัญหา" Route="ReportPage"
+                      ContentTemplate="{DataTemplate local:ReportPage}"/>
+        <ShellContent Title="ตั้งค่า" Route="SettingPage"
+                      ContentTemplate="{DataTemplate local:SettingPage}"/>
+    </TabBar>
+    
+
+</Shell>
+

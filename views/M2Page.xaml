@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TruckGoTest.views.M2Page"
+             Title="M2Page" Shell.NavBarIsVisible="False">
+
+    <StackLayout>
+        <Grid ColumnDefinitions="80,*,50,50" RowDefinitions="60,*" Margin="10,5">
+            <Label Text="กรอกข้อมูล" Grid.ColumnSpan="4" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="20" TextColor="{StaticResource BlueTopiclbl}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <StackLayout Grid.Column="2" BackgroundColor="Orange"/>
+            <StackLayout Grid.Column="3" BackgroundColor="DarkOrange"/>
+
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="4" Margin="0,30">
+                <Frame BackgroundColor="{StaticResource BlueBGFrame}" BorderColor="Transparent" CornerRadius="10" Padding="10">
+                    <StackLayout>
+                        <Grid ColumnDefinitions="*,20">
+                            <Label Text="DN 1" Grid.Column="0" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="18"/>
+                        </Grid>
+                        <BoxView HeightRequest="1" Color="#B2C5EE" Margin="0,5,0,0"/>
+                        <StackLayout Margin="0,10,0,0">
+                            <Label Text="ต้นทาง"/>
+                            <Frame BackgroundColor="#E8EFFF" BorderColor="Transparent" CornerRadius="10" Padding="5">
+                                <Label Text="ที่นี่ีที่ไหนใช่ต้นทางรึเปล่า"/>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

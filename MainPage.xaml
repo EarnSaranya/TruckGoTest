@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TruckGoTest.MainPage" Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <StackLayout Margin="15,30">
+            <Grid ColumnDefinitions="*,70" ColumnSpacing="10">
+                <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+                    <Label Text="TP|6004" Opacity=".7" TextColor="{StaticResource BlueMainColor}"/>
+                    <Label Text="Driver TP04" TextColor="{StaticResource BlueMainColor}" FontAttributes="Bold" FontFamily="SukhumvitBold"/>
+                </VerticalStackLayout>
+                <Frame Grid.Column="1" WidthRequest="60" HeightRequest="60" CornerRadius="30" BackgroundColor="Gray" BorderColor="Transparent"/>
+            </Grid>
+
+            <Frame HeightRequest="84" BackgroundColor="{StaticResource BlueMainColor}" CornerRadius="15" Margin="0,20" BorderColor="Transparent" Padding="15">
+                <Grid ColumnDefinitions="*,80" RowDefinitions="*,*" RowSpacing="10">
+                    <Grid Grid.Column="0" Grid.Row="0" ColumnDefinitions="110,2*">
+                        <Label Grid.Column="0" Text="Shipment No. :" TextColor="White" Opacity=".6" VerticalTextAlignment="Center"/>
+                        <Label Grid.Column="1" Text="-" TextColor="White" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="18"/>
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="1" ColumnDefinitions="60,*">
+                        <Label Grid.Column="0" Text="Status :" TextColor="White" Opacity=".6" VerticalTextAlignment="Center"/>
+                        <Label Grid.Column="1" Text="ไม่มีงาน" TextColor="White" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="18"/>
+                    </Grid>
+                    <VerticalStackLayout Grid.Column="1" Grid.RowSpan="2" HorizontalOptions="End" >
+                        <Frame WidthRequest="40" HeightRequest="40" CornerRadius="20" BackgroundColor="{StaticResource OrangeBtn}" BorderColor="Transparent"/>
+                        <Label Text="ดูรายละเอียด" TextColor="White" FontSize="10"/>
+                    </VerticalStackLayout>
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="White" HasShadow="True" HeightRequest="60" BorderColor="Transparent" CornerRadius="10">
+                <Frame.Shadow>
+                    <Shadow Brush="Black" Opacity="0.2" Radius="5"/>
+                </Frame.Shadow>
+
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
+

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TruckGoTest.views.HomePage"
+             Title="HomePage" Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <StackLayout Margin="15,30">
+            <Grid ColumnDefinitions="*,70" ColumnSpacing="10">
+                <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+                    <Label Text="TP|6004" Opacity=".7" TextColor="{StaticResource BlueMainColor}"/>
+                    <Label Text="Driver TP04" TextColor="{StaticResource BlueMainColor}" FontSize="20" FontAttributes="Bold" FontFamily="SukhumvitBold"/>
+                </VerticalStackLayout>
+                <Frame Grid.Column="1" WidthRequest="60" HeightRequest="60" CornerRadius="30" BackgroundColor="Gray" BorderColor="Transparent"/>
+            </Grid>
+
+            <Frame HeightRequest="84" BackgroundColor="{StaticResource BlueMainColor}" CornerRadius="15" Margin="0,20" BorderColor="Transparent" Padding="15">
+                <Grid ColumnDefinitions="*,80" RowDefinitions="*,*" RowSpacing="10">
+                    <Grid Grid.Column="0" Grid.Row="0" ColumnDefinitions="110,2*">
+                        <Label Grid.Column="0" Text="Shipment No. :" TextColor="White" Opacity=".6" VerticalTextAlignment="Center"/>
+                        <Label Grid.Column="1" Text="-" TextColor="White" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="18"/>
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="1" ColumnDefinitions="60,*">
+                        <Label Grid.Column="0" Text="Status :" TextColor="White" Opacity=".6" VerticalTextAlignment="Center"/>
+                        <Label Grid.Column="1" Text="ไม่มีงาน" TextColor="White" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="18"/>
+                    </Grid>
+                    <VerticalStackLayout Grid.Column="1" Grid.RowSpan="2" HorizontalOptions="End" >
+                        <Frame WidthRequest="40" HeightRequest="40" CornerRadius="20" BackgroundColor="{StaticResource OrangeBtn}" BorderColor="Transparent"/>
+                        <Label Text="ดูรายละเอียด" TextColor="White" FontSize="10"/>
+                    </VerticalStackLayout>
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="White" HasShadow="True" HeightRequest="75" BorderColor="Transparent" CornerRadius="10">
+                <Frame.Shadow>
+                    <Shadow Brush="Black" Opacity="0.2" Radius="5"/>
+                </Frame.Shadow>
+                <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*,*,*" VerticalOptions="Center" RowSpacing="5">
+                     <ProgressBar Grid.Row="1" Grid.ColumnSpan="4" Progress="0" ProgressColor="#11D300"/>
+                     <Frame Grid.Column="0" Grid.Row="1" HeightRequest="30" WidthRequest="30" CornerRadius="15" BackgroundColor="White" BorderColor="{StaticResource Gray200}" HorizontalOptions="Start" Padding="0">
+                        <Label Text="1" TextColor="{StaticResource Gray200}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16"/>
+                     </Frame>
+                     <Label Text="เตรียมพร้อม" TextColor="{StaticResource Gray200}" Grid.Column="0" Grid.Row="2" FontSize="10"/>
+
+                    <Frame Grid.Column="1" Grid.Row="1" HeightRequest="30" WidthRequest="30" CornerRadius="15" BackgroundColor="White" BorderColor="{StaticResource Gray200}" HorizontalOptions="Start" Padding="0" Margin="10,0">
+                        <Label Text="2" TextColor="{StaticResource Gray200}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16"/>
+                     </Frame>
+                    <Label Text="รับสินค้า" TextColor="{StaticResource Gray200}" Grid.Column="1" Grid.Row="2" FontSize="10" HorizontalTextAlignment="Center" Margin="-28,0,0,0"/>
+
+                    <Frame Grid.Column="2" Grid.Row="1" HeightRequest="30" WidthRequest="30" CornerRadius="15" BackgroundColor="White" BorderColor="{StaticResource Gray200}" HorizontalOptions="Center" Padding="0" Margin="0,0,-15,0">
+                        <Label Text="3" TextColor="{StaticResource Gray200}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16"/>
+                     </Frame>
+                    <Label Text="จัดส่ง" TextColor="{StaticResource Gray200}" Grid.Column="2" Grid.Row="2" FontSize="10" HorizontalTextAlignment="Center" Margin="15,0,0,0"/>
+
+                    <Frame Grid.Column="3" Grid.Row="1" HeightRequest="30" WidthRequest="30" CornerRadius="15" BackgroundColor="White" BorderColor="{StaticResource Gray200}" HorizontalOptions="End" Padding="0">
+                        <Label Text="4" TextColor="{StaticResource Gray200}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16"/>
+                     </Frame>
+                    <Label Text="ถึงปลายทาง" TextColor="{StaticResource Gray200}" Grid.Column="3" Grid.Row="2" FontSize="10" HorizontalTextAlignment="End"/>
+                </Grid>
+            </Frame>
+
+            <Grid RowDefinitions="*,65" RowSpacing="15" Margin="0,25">
+                <Frame Grid.Row="0" BackgroundColor="{StaticResource Gray300}" HeightRequest="200"/>
+                <Frame Grid.Row="1" BackgroundColor="{StaticResource OrangeBtn}" BorderColor="Transparent" CornerRadius="25" HeightRequest="50">
+                    <Label Text="เข้ารับสินค้า" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="20" FontAttributes="Bold" FontFamily="SukhumvitBold"/>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="frameCreateSM" Tapped="frameCreateSM_Tapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

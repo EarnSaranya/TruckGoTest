@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TruckGoTest.views.CalendarPage"
+             Title="CalendarPage" Shell.NavBarIsVisible="False">
+
+    <StackLayout>
+        <Grid ColumnDefinitions="80,*,80" Margin="0,5">
+            <Label Text="เตรียมความพร้อม" Grid.Column="1" FontFamily="SukhumvitBold" FontAttributes="Bold" FontSize="20" TextColor="{StaticResource BlueTopiclbl}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" >
+                <Frame WidthRequest="30" HeightRequest="30" CornerRadius="15" BackgroundColor="{StaticResource OrangeBtn}" BorderColor="Transparent"/>
+                <Label Text="เลือกทั้งหมด" TextColor="Black" FontSize="10" Margin="0,5"/>
+            </VerticalStackLayout>
+        </Grid>
+
+        <StackLayout Margin="10">
+            <Label Text="1. ตรวจสภาพรถ" FontAttributes="Bold" FontFamily="SukhumvitBold" TextColor="{StaticResource BlueTopiclbl}"/>
+            <Frame HeightRequest="200" BackgroundColor="{StaticResource BlueBGFrame}" BorderColor="Transparent" CornerRadius="10" Margin="0,5">
+                <StackLayout>
+                    <Grid ColumnDefinitions="*,30" RowDefinitions="*,*" VerticalOptions="Start">
+                        <Grid ColumnDefinitions="10,*" Grid.Column="0" Grid.Row="0" VerticalOptions="Start">
+                            <Frame Grid.Column="0" HeightRequest="6" WidthRequest="6" CornerRadius="3" BackgroundColor="Black" BorderColor="Transparent" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="รูปหน้ารถพร้อมทะเบียนรถ *" Grid.Column="1" VerticalTextAlignment="Center"/>
+                        </Grid>
+                        <CheckBox Grid.Column="1" Grid.Row="0" VerticalOptions="Start" HorizontalOptions="Start"/>
+                    </Grid>
+                    <FlexLayout x:Name="flexTakePictureX"  Wrap="Wrap"  AlignItems="Start" HorizontalOptions="CenterAndExpand">
+                        <Frame x:Name="frameTakePicture" HorizontalOptions="StartAndExpand" HeightRequest="125" WidthRequest="80" BorderColor="#FFC5B2" BackgroundColor="Transparent" Padding="-10" Margin="5">
+                            <StackLayout  x:Name="stckTakePicture" Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Padding="10">
+                                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,10,0,0">
+                                    <Label Text="ถ่ายรูป" x:Name="lblTakePicture" HorizontalTextAlignment="Center" TextColor="#565656"/>
+                                    <Label Text="*" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="3,0" TextColor="Red" FontSize="12"/>
+                                </HorizontalStackLayout>
+                                <Image Source="addimage" x:Name="imageCameraPic" Scale=".6" Opacity=".5" Margin="0,-10" />
+                            </StackLayout>
+                        </Frame>
+                     </FlexLayout>
+                </StackLayout>
+                
+            </Frame>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

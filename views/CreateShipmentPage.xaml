@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TruckGoTest.views.CreateShipmentPage"
+             Title="CreateShipmentPage" Shell.NavBarIsVisible="False">
+
+    <StackLayout>
+        <Grid ColumnDefinitions="80,*" RowDefinitions="60,*" Margin="0,5">
+            <Label Text="เข้ารับสินค้า" Grid.ColumnSpan="2" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="20" TextColor="{StaticResource BlueTopiclbl}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Margin="30,0">
+                <Frame BackgroundColor="{StaticResource OrangeBtn}" HeightRequest="100" BorderColor="Transparent" CornerRadius="10">
+                    <Grid ColumnDefinitions="80,*">
+                        <Frame Grid.Column="0" WidthRequest="60" HeightRequest="60" CornerRadius="30" BackgroundColor="{StaticResource Gray100}" BorderColor="Transparent" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label Grid.Column="1" Text="กรอกข้อมูล" TextColor="White" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="22" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    </Grid>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="frameM2" Tapped="frameM2_Tapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame BackgroundColor="{StaticResource OrangeBtn}" HeightRequest="100" BorderColor="Transparent" CornerRadius="10" Margin="0,50">
+                    <Grid ColumnDefinitions="80,*">
+                        <Frame Grid.Column="0" WidthRequest="60" HeightRequest="60" CornerRadius="30" BackgroundColor="{StaticResource Gray100}" BorderColor="Transparent" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label Grid.Column="1" Text="สแกนข้อมูล" TextColor="White" FontAttributes="Bold" FontFamily="SukhumvitBold" FontSize="22" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    </Grid>
+                    <!--<Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="frameM3" Tapped="frameM3_Tapped"/>
+                    </Frame.GestureRecognizers>-->
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
