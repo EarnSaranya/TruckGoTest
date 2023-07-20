@@ -6,4 +6,12 @@ public partial class M2Page : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    void btnSwitchJob_Clicked(System.Object sender, System.EventArgs e)
+    {
+    }
+
+    void btnFinish_Clicked(System.Object sender, System.EventArgs e)
+    {
+    }
 }
