@@ -61,7 +61,7 @@
 
             <Grid RowDefinitions="*,65" RowSpacing="15" Margin="0,25">
                 <Frame Grid.Row="0" BackgroundColor="{StaticResource Gray300}" HeightRequest="200"/>
-                <Frame Grid.Row="1" BackgroundColor="{StaticResource OrangeBtn}" BorderColor="Transparent" CornerRadius="25" HeightRequest="50">
+                <Frame Grid.Row="1" BackgroundColor="{StaticResource OrangeBtn}" BorderColor="Transparent" CornerRadius="25" HeightRequest="50" Padding="0">
                     <Label Text="เข้ารับสินค้า" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="20" FontAttributes="Bold" FontFamily="SukhumvitBold"/>
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer x:Name="frameCreateSM" Tapped="frameCreateSM_Tapped"/>
